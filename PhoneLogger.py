@@ -29,10 +29,9 @@ num = phonenumbers.parse(phone_number)
 print("Searching for information...")
 time.sleep(2)
 
-print("are the number is valid? ", phonenumbers.is_valid_number(num))
-
 print("-------------------------------------------------------------")
 
+print("are the number is valid? ", phonenumbers.is_valid_number(num))
 print("country : ", geocoder.country_name_for_number(num, "en"))
 print("possible :", phonenumbers.is_possible_number(num))
 print("carrier : ", carrier.name_for_number(num, "en"))
